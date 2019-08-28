@@ -5,7 +5,7 @@ class Shoe
   
   def initialize(brand)
     @brand = brand
-    BRANDS.append(@brand )
+    BRANDS.append(@brand)
   end
 
   def cobble
