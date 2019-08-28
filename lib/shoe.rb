@@ -6,7 +6,7 @@ class Shoe
   def initialize(brand)
     @brand = brand
     if BRANDS.include?(@brand)
-      puts (' brand ')
+      puts (' brand already in the list ')
     else
       BRANDS.append(@brand)
     end
