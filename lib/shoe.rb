@@ -5,8 +5,11 @@ class Shoe
   
   def initialize(brand)
     @brand = brand
-    BRANDS.append(@brand)
-    BRANDS = BRANDS.uniq
+    if BRANDS.include?(@brand)
+      puts (' brand ')
+    else
+      BRANDS.append(@brand)
+    end
   end
 
   def cobble
@@ -18,5 +21,7 @@ class Shoe
     @brand = brand
     BRANDS.append(brand)
   end
-
+  def ne
+    BRANDS
+  end
 end
